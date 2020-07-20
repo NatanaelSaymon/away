@@ -149,4 +149,28 @@ section.banner{
   margin-top: 40px;
 }
 
+.banner .sliders-pointers{
+  width: 100vw;
+  height: 20px;
+  position: absolute;
+  margin-top: -50px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .sliders-pointers .pointer{
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  border: 2px solid #B28756;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pointer.active{
+  background: #B28756;
+}
+
 /* === === END SECTION BANNER === ===*/
