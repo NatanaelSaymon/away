@@ -95,5 +95,58 @@ section.banner{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
+
+.banner .sliders{
+  width: 1000vw;
+  height: 100%;
+}
+
+.banner .slide{
+  width: 100vw;
+  height: 100%;
+  display: inline-block;
+  background: rgba(0,0,0,0.8);
+}
+
+.banner .slide-area{
+  height: 100%;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.banner .slide-area h1{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.banner .slide-area span{
+  color: #B28756;
+}
+
+.banner .slide-area h2{
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.banner .slide-area a{
+  display: block;
+  background: #B28756;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
 /* === === END SECTION BANNER === ===*/
