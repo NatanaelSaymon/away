@@ -11,6 +11,7 @@
 body{
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
+  overflow-x: hidden;
 }
 
 a{
@@ -172,5 +173,93 @@ section.banner{
 .pointer.active{
   background: #B28756;
 }
-
 /* === === END SECTION BANNER === ===*/
+
+
+
+/* === === SECTIONS DEFAULT LIGHT/DARK === ===*/
+.default.light{
+  background: #F7F7F7F7;
+}
+
+.default.light .section-title,
+.default.light .section-body{
+  color: #000;
+}
+
+.default.dark{
+  background: #000;
+}
+
+.default.dark .section-title,
+.default.dark .section-body{
+  color: #fff;
+}
+/* === === END SECTIONS DEFAULT LIGHT/DARK === ===*/
+
+
+
+/* === === SECTIONS DEFAULT - ABOUT === ===*/
+section.default{
+  padding: 50px 0;
+}
+
+.default .section-title,
+.default .section-desc{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.default .section-title{
+  font-size: 20px;
+}
+
+.default .section-desc{
+  font-size: 13px;
+  color: #ccc;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.default .section-body{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.section-aboutus{
+  display: flex;
+}
+
+.section-aboutus--left{
+  flex: 1;
+}
+
+.section-aboutus--left .button{
+  display: inline-block;
+  background: #B28756;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+.section-aboutus--left p{
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.section-aboutus--right{
+  width: 500px;
+  text-align: center;
+}
+
+.section-aboutus--right iframe{
+  width: 90%;
+  box-shadow: 0px 0px 10px #333;
+}
+/* === === END SECTIONS DEFAULT - ABOUT === ===*/
