@@ -22,8 +22,9 @@ ul li{
   list-style: none;
 }
 
-/* === === HEADER === ===*/
 
+
+/* === === HEADER === ===*/
 header{
   height: 100px;
   background: #000;
@@ -125,7 +126,7 @@ section.banner{
 }
 
 .banner .slide-area span{
-  color: #B28756;
+  color: var(--color-bg-default);
 }
 
 .banner .slide-area h2{
@@ -136,7 +137,7 @@ section.banner{
 
 .banner .slide-area a{
   display: block;
-  background: #B28756;
+  background: var(--color-bg-default);
   color: #fff;
   text-transform: uppercase;
   font-size: 11px;
@@ -162,13 +163,13 @@ section.banner{
   width: 15px;
   height: 15px;
   margin: 0 5px;
-  border: 2px solid #B28756;
+  border: 2px solid var(--color-bg-default);
   border-radius: 50%;
   cursor: pointer;
 }
 
 .pointer.active{
-  background: #B28756;
+  background: var(--color-bg-default);
 }
 /* === === END SECTION BANNER === ===*/
 
@@ -232,9 +233,9 @@ section.default{
   flex: 1;
 }
 
-.section-aboutus--left .button{
+.button{
   display: inline-block;
-  background: #B28756;
+  background: var(--color-bg-default);
   color: #fff;
   text-transform: uppercase;
   font-size: 11px;
@@ -279,7 +280,6 @@ section.default{
   border-right: 1px solid #333;
 }
 
-
 .section-service h4{
   margin-top: 20px;
   text-transform: uppercase;
@@ -295,7 +295,7 @@ section.default{
 
 
 
-/* === SECTION PROJECTS === */
+/* === === SECTION PROJECTS === === */
 .section-projects{
   display: flex;
   flex-direction: column;
@@ -330,4 +330,52 @@ section.default{
 .section-projects--filters li.active{
   border-bottom: 3px solid var(--color-bg-default);
 }
-/* === END SECTION PROJECTS === */
+
+.section-projects--photos{
+  width: 100vw;
+  max-width: 1140px;
+  margin-top: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section-projects--photo{
+  width: 280px;
+}
+
+.section-projects--photoarea{
+  margin: 10px;
+  width: 260px;
+  height: 160px;
+}
+
+.section-projects--photoarea img{
+  width: inherit;
+  height: inherit;
+}
+
+.section-projects--photoinfo{
+  display: none;
+
+  position: absolute;
+  background: rgba(0,0,0,0.5);
+  width: inherit;
+  height: inherit;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.section-projects--photoinfo h5{
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.section-projects--photoarea:hover .section-projects--photoinfo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* === === END SECTION PROJECTS === === */
