@@ -87,7 +87,7 @@ header{
 
 
 /* === === SECTION BANNER === ===*/
-section.banner{
+.banner{
   height: calc(100vh - 100px);
   background: #333;
   background-image: url('/assets/images/bg.jpg');
@@ -135,8 +135,8 @@ section.banner{
   margin-top: 20px;
 }
 
-.banner .slide-area a{
-  display: block;
+.button{
+  display: inline-block;
   background: var(--color-bg-default);
   color: #fff;
   text-transform: uppercase;
@@ -168,7 +168,7 @@ section.banner{
   cursor: pointer;
 }
 
-.pointer.active{
+.banner .pointer.active{
   background: var(--color-bg-default);
 }
 /* === === END SECTION BANNER === ===*/
@@ -180,17 +180,17 @@ section.banner{
   background: #F7F7F7F7;
 }
 
-.default.light .section-title,
-.default.light .section-body{
+.light .section-title,
+.light .section-body{
   color: #000;
 }
 
-.default.dark{
+.dark{
   background: #000;
 }
 
-.default.dark .section-title,
-.default.dark .section-body{
+.dark .section-title,
+.dark .section-body{
   color: #fff;
 }
 /* === === END SECTIONS DEFAULT LIGHT/DARK === ===*/
@@ -198,29 +198,29 @@ section.banner{
 
 
 /* === === SECTIONS DEFAULT - ABOUT === ===*/
-section.default{
+.default{
   padding: 50px 0;
 }
 
-.default .section-title,
-.default .section-desc{
+.section-title,
+.section-desc{
   text-align: center;
   text-transform: uppercase;
   font-weight: 600;
 }
 
-.default .section-title{
+.section-title{
   font-size: 20px;
 }
 
-.default .section-desc{
+.section-desc{
   font-size: 13px;
   color: #ccc;
   margin-top: 10px;
   margin-bottom: 40px;
 }
 
-.default .section-body{
+.section-body{
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -231,19 +231,6 @@ section.default{
 
 .section-aboutus--left{
   flex: 1;
-}
-
-.button{
-  display: inline-block;
-  background: var(--color-bg-default);
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 11px;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 10px 30px;
-  border-radius: 20px;
-  margin-top: 40px;
 }
 
 .section-aboutus--left p{
@@ -379,3 +366,71 @@ section.default{
   flex-direction: column;
 }
 /* === === END SECTION PROJECTS === === */
+
+
+
+/* === === SECTION TEAM === === */
+.bg-team{
+  background-image: url('../images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+}
+
+.section-team-area{
+  background-color: rgba(0,0,0,0.8);
+  padding: 50px 0;
+}
+
+.section-team{
+  overflow: hidden;
+  max-width: 880px;
+  margin: auto;
+}
+
+.section-team .sliders{
+  width: 1000vw;
+  height: 100%;
+}
+
+.section-team .slide{
+  width: 280px;
+  height: 100%;
+  min-height: 300px;
+  display: inline-block;
+  background: #fff;
+  margin-right: 20px;
+}
+
+.section-team .slide-area{
+  height: 100%;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-team-area .sliders-pointers{
+  margin-top: 30px;
+  height: 20px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-team-area .sliders-pointers .pointer{
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  border: 2px solid var(--color-bg-default);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.section-team-area .pointer.active{
+  background: var(--color-bg-default);
+}
+/* === === END SECTION TEAM === === */
