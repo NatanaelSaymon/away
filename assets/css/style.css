@@ -555,3 +555,19 @@ header{
 }
 /* === === END SECTION CLIENTS === === */
 
+
+
+/* === === SECTION PATROCINIO === === */
+.section-patrocinios__area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.section-patrocinio{
+  flex: 1;
+  text-align: center;
+}
+/* === === END SECTION PATROCINIO === === */
+
