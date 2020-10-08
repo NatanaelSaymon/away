@@ -229,21 +229,21 @@ header{
   display: flex;
 }
 
-.section-aboutus--left{
+.section-aboutus__left{
   flex: 1;
 }
 
-.section-aboutus--left p{
+.section-aboutus__left p{
   font-size: 15px;
   line-height: 25px;
 }
 
-.section-aboutus--right{
+.section-aboutus__right{
   width: 500px;
   text-align: center;
 }
 
-.section-aboutus--right iframe{
+.section-aboutus__right iframe{
   width: 90%;
   box-shadow: 0px 0px 10px #333;
 }
@@ -289,7 +289,7 @@ header{
   align-items: center;
 }
 
-.section-projects--filters{
+.section-projects__filters{
   display: inline-block; 
   border: 1px solid #CCC;
   background: #eee;
@@ -297,7 +297,7 @@ header{
   padding: 0 20px;
 }
 
-.section-projects--filters li{
+.section-projects__filters li{
   display: inline-block;
   padding: 10px;
   text-transform: uppercase;
@@ -308,17 +308,17 @@ header{
   cursor: pointer;
 }
 
-.section-projects--filters li:last-child{
+.section-projects__filters li:last-child{
   border-right: 0;
 }
 
-.section-projects--filters li:hover,
-.section-projects--filters li:focus,
-.section-projects--filters li.active{
+.section-projects__filters li:hover,
+.section-projects__filters li:focus,
+.section-projects__filters li.active{
   border-bottom: 3px solid var(--color-bg-default);
 }
 
-.section-projects--photos{
+.section-projects__photos{
   width: 100vw;
   max-width: 1140px;
   margin-top: 20px;
@@ -328,22 +328,22 @@ header{
   justify-content: center;
 }
 
-.section-projects--photo{
+.section-projects__photo{
   width: 280px;
 }
 
-.section-projects--photoarea{
+.section-projects__photoarea{
   margin: 10px;
   width: 260px;
   height: 160px;
 }
 
-.section-projects--photoarea img{
+.section-projects__photoarea img{
   width: inherit;
   height: inherit;
 }
 
-.section-projects--photoinfo{
+.section-projects__photoinfo{
   display: none;
 
   position: absolute;
@@ -354,12 +354,12 @@ header{
   cursor: pointer;
 }
 
-.section-projects--photoinfo h5{
+.section-projects__photoinfo h5{
   font-size: 21px;
   font-weight: 600;
 }
 
-.section-projects--photoarea:hover .section-projects--photoinfo{
+.section-projects__photoarea:hover .section-projects__photoinfo{
   display: flex;
   justify-content: center;
   align-items: center;
