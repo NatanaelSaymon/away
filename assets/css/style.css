@@ -558,14 +558,11 @@ header{
 
 
 /* === === SECTION PATROCINIO === === */
-.section-patrocinios__area{
+.section-patrocinio{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
-.section-patrocinio{
+li{
   flex: 1;
   text-align: center;
 }
