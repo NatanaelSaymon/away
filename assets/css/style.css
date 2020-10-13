@@ -648,7 +648,10 @@ header{
 /* === === SECTION PREMIUM === === */
 .section-premium{
   display: flex;
+  border-bottom: 2px solid #ededed;
+  padding-bottom: 30px;
 }
+
 
 .section-premium__img{
   /* flex: 0 0 auto; */
@@ -704,6 +707,27 @@ header{
 
 .section-premium__desc .margin{
   margin-bottom: 30px;
+}
+
+.premium .sliders-pointers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  height: 20px;
+}
+
+.premium .sliders-pointers .pointer{
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  border: 2px solid var(--color-bg-default);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.premium .pointer.active{
+  background: var(--color-bg-default);
 }
 /* === === END SECTION PREMIUM === === */
 
