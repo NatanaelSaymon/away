@@ -267,6 +267,10 @@ header{
   padding: 15px;
 }
 
+.section-service img{
+  margin: 0 auto;
+}
+
 .section-service:last-child{
   border-right: 1px solid #333;
 }
@@ -730,4 +734,45 @@ header{
   background: var(--color-bg-default);
 }
 /* === === END SECTION PREMIUM === === */
+
+
+
+/* === === SECTION WORKS === === */
+.section-works{
+  display: flex;
+}
+
+.section-work{
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+}
+
+.section-work__title{
+  font-size: 40px;
+  color: var(--color-bg-default);
+}
+
+.section-work__title::after{
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 20px;
+  height: 4px;
+  background: #ccc;
+  margin-top: 5px;
+}
+
+.section-work h4{
+  height: 60px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.section-work p{
+  font-size: 13px;
+  color: #999;
+}
+/* === === END SERVICE WORKS === === */
 
