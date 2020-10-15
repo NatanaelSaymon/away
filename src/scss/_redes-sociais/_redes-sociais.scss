@@ -1,0 +1,65 @@
+/* === === SECTION REDES SOCIAIS === === */
+.redes-sociais {
+  padding: 20px;
+}
+.section-redes-sociais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-redes-sociais__item,
+.section-redes-sociais__list,
+.section-redes-sociais__list-item {
+  display: flex;
+  align-items: center;
+}
+
+.section-redes-sociais__item {
+  margin-right: 60px;
+}
+
+.section-redes-sociais__item img {
+  margin-right: 10px;
+}
+
+.section-redes-sociais__item p {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #999;
+}
+
+.section-redes-sociais__list-item {
+  margin-right: 30px;
+}
+
+.section-redes-sociais__list-item:last-child {
+  margin-right: 0;
+}
+
+.section-redes-sociais__list-item i {
+  font-size: 30px;
+  margin-right: 8px;
+}
+
+.section-redes-sociais__list-item p {
+  font-weight: bold;
+  color: #999;
+}
+
+.fa-twitter-square {
+  color: #2aa9e0;
+}
+.fa-linkedin {
+  color: #0976b1;
+}
+.fa-facebook-square {
+  color: #3b5998;
+}
+.fa-google-plus-square {
+  color: #de564a;
+}
+.fa-pinterest-square {
+  color: #c5313b;
+}
+/* === === END SECTION REDES SOCIAIS === === */

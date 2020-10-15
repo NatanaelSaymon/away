@@ -1,0 +1,19 @@
+/* === === SECTIONS DEFAULT LIGHT/DARK === ===*/
+.default.light{
+    background: #ededed;
+}
+
+.light .section-title,
+.light .section-body{
+    color: #000;
+}
+
+.dark{
+    background: #000;
+}
+
+.dark .section-title,
+.dark .section-body{
+    color: #fff;
+}
+/* === === END SECTIONS DEFAULT LIGHT/DARK === ===*/

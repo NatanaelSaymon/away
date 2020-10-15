@@ -1,0 +1,67 @@
+/* === === SECTION CARD PRICE === === */
+.section-card-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-card-price__item {
+  width: 255px;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 30px 0;
+}
+
+.section-card-price__title {
+  font-size: 16px;
+  margin-bottom: 13px;
+  text-transform: uppercase;
+}
+
+.section-card-price__price {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.section-card-price__month {
+  font-size: 12px;
+  color: #999;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+
+.section-card-price__desc p {
+  margin: 10px 0;
+}
+
+.section-card-price__desc p::after {
+  content: "";
+  display: block;
+  margin: 10px auto 0 auto;
+  width: 15px;
+  height: 1px;
+  background-color: #000;
+}
+
+.section-card-price__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+  width: 120px;
+  height: 40px;
+  background-color: #373737;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 18px;
+}
+
+.section-card-price__button.active {
+  background-color: $color-primary;
+}
+
+.section-card-price__button:hover {
+  background-color: $color-primary;
+}
+/* === === END SECTION CARD PRICE === === */

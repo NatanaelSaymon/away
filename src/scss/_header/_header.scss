@@ -1,0 +1,59 @@
+/* === === HEADER === ===*/
+header{
+    height: 100px;
+    background: #000;
+  }
+  
+  .header{
+    display: flex;
+    align-items: center;
+  
+    width: 90%;
+    max-width: 1140px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  
+  .logo{
+    width: 100px;
+  }
+  
+  .logo .logoimg{
+    width: 80px;
+    height: 80px;
+    background: $color-primary;
+  }
+  
+  .menu{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+  }
+  
+  .menu ul{
+    display: flex;
+  }
+  
+  .menu li a{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    padding: 0 10px;
+  
+    display: flex; /*inserindo display flex, ou block, podemos inserir uma altura na tag <a>*/
+    align-items: center; /*centrelizando os itens ao meio, pois iremos da uma altura para a tag <a>*/
+  
+    height: 100px;
+    border-bottom: 5px solid #000;
+  }
+  
+  .menu .active a{
+    border-bottom: 5px solid $color-primary;
+    color: $color-primary;
+  }
+  
+  .menu li a:hover{
+    border-bottom: 5px solid $color-primary;
+    color: $color-primary;
+  }
+  /* === === END HEADER === ===*/
