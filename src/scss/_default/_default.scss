@@ -1,4 +1,8 @@
 /* === === SECTIONS DEFAULT LIGHT/DARK === ===*/
+.default{
+    padding: 50px 0;
+}
+
 .default.light{
     background: #ededed;
 }
@@ -15,5 +19,28 @@
 .dark .section-title,
 .dark .section-body{
     color: #fff;
+}
+
+.section-title,
+.section-desc{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.section-title{
+    font-size: 20px;
+}
+
+.section-desc{
+    font-size: 13px;
+    color: #ccc;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.section-body{
+    max-width: 1140px;
+    margin: 0 auto;
 }
 /* === === END SECTIONS DEFAULT LIGHT/DARK === ===*/

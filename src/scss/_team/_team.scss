@@ -80,26 +80,4 @@
 .section-team__social a:hover {
   background-color: $color-primary;
 }
-
-.section-team-area .sliders-pointers {
-  margin-top: 30px;
-  height: 20px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.section-team-area .sliders-pointers .pointer {
-  width: 15px;
-  height: 15px;
-  margin: 0 5px;
-  border: 2px solid $color-primary;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.section-team-area .pointer.active {
-  background: $color-primary;
-}
 /* === === END SECTION TEAM === === */

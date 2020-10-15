@@ -21,7 +21,7 @@
 
 // Components (fontes do site)
 // =============================================================================
-
+@import "_components/_components.scss";
 
 
 // Includes
@@ -39,7 +39,7 @@
 @import "_services/_services.scss";
 @import "_projects/_projects.scss";
 @import "_team/_team.scss";
-@import "_client/_client.scss";
+@import "_clients/_clients.scss";
 @import "_patrocinio/_patrocinio.scss";
 @import "_price/_price.scss";
 @import "_premium/_premium.scss";

@@ -1,0 +1,25 @@
+/* === === POINTERS === === */
+.sliders__pointers {
+  width: 100vw;
+  height: 20px;
+  position: absolute;
+  margin-top: -50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-pointer{
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    border: 2px solid $color-primary;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &.active{
+        background: $color-primary;
+    }
+  }
+}
+/* === === END POINTERS === === */
