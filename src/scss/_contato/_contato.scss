@@ -1,0 +1,72 @@
+.contato {
+    max-width: 600px;
+    margin: 0 auto;
+
+    &-form {
+        width: 100%;
+
+        &__item {
+            display: flex;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #aeaeae;
+
+            &:first-child {
+                border-bottom: none;
+            }
+
+            &-name,
+            &-email {
+                display: flex;
+                flex: 1;
+                border-bottom: 2px solid #aeaeae;
+            }
+
+            &-name {
+                margin-right: 20px;
+            }
+
+            &-titulo {
+                width: 80px;
+
+                label {
+                    display: flex;
+                    align-items: center;
+                    text-transform: uppercase;
+                    height: 40px;
+                    cursor: pointer;
+                }
+            }
+
+            &-input {
+                flex: 1;
+                display: flex;
+        
+                input,
+                textarea {
+                    width: 100%;
+                    border: none;
+                    background: transparent;
+                    outline: none;
+                }
+
+                input {
+                    height: 40px;
+                }
+        
+                &.input--container {
+                    width: 100%
+                }
+            }
+
+            &-textarea {
+                resize: none;
+                height: 90px;
+            }
+        }
+
+        
+    }
+}
+
+
+
