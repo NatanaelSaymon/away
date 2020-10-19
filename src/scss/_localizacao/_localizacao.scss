@@ -1,0 +1,41 @@
+.localizacao {
+    width: 100%;
+    padding: 40px 10px;
+    background-image: url('../image/mapa.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &-content {
+        max-width: 540px;
+        padding: 50px 40px;
+        background: #fff;
+
+        &__item{
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &__icon {
+            width: 30px;
+            height: 30px;
+            padding: 5px;
+            border-radius: 50%;
+            background: #ccc;
+            margin-right: 20px;
+        
+            img {
+                margin: 0 auto
+            }
+
+            .mg--top {
+                margin-top: 4px;
+            }
+        }
+    }
+}
