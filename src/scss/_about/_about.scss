@@ -1,17 +1,13 @@
 /* === === SECTIONS ABOUT === ===*/
-.about{
+.about {
 
     &__left {
-        flex: 1;
-
-        p {
+        &-desc {
             text-align: justify;
             font-size: 15px;
             line-height: 25px;
         }
-    }
-
-    
+    }  
 }
 
 @media screen and (max-width: 1023px) {
