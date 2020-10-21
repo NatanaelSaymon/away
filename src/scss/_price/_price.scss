@@ -53,10 +53,19 @@
 @media screen and (min-width: 1024px) {
   .price__card {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
     &-item {
       width: 255px;
+      margin: 0 10px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }
