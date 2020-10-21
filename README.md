@@ -1,1 +1,1 @@
-Link: https://natanaelsaymon.github.io/away/
+Github Pages: https://natanaelsaymon.github.io/away/
