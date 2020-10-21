@@ -1,24 +1,58 @@
 /* === === SECTIONS ABOUT === ===*/
 .about{
-    display: flex;
 
     &__left {
         flex: 1;
 
         p {
+            text-align: justify;
             font-size: 15px;
             line-height: 25px;
         }
     }
 
-    &__right {
-        width: 500px;
-        text-align: center;
-    }
+    
+}
 
-    &__iframe {
-        width: 90%;
-        box-shadow: 0px 0px 10px #333;
+@media screen and (max-width: 1023px) {
+    .about {
+        text-align: center;
+        flex-direction: column;
+        padding: 0 20px;
+
+        &__right {
+            margin-top: 50px;
+        }
+
+        &__iframe {
+            width: 100%;
+            box-shadow: 0px 0px 10px #333;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .about {
+        display: flex;
+
+        &__left {
+            flex: 1;
+
+            p {
+                font-size: 15px;
+                line-height: 25px;
+            }
+        }
+
+        &__right {
+            width: 500px;
+            text-align: center;
+        }
+
+        &__iframe {
+            width: 90%;
+            box-shadow: 0px 0px 10px #333;
+        }
     }
 }
 /* === === END SECTIONS ABOUT === ===*/
