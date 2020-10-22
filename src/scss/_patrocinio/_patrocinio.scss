@@ -1,10 +1,14 @@
 /* === === SECTION PATROCINIO === === */
 .patrocinio__list {
   display: flex;
+  align-items: center;
 
   &-item{
     flex: 1;
-    text-align: center;
+    
+    img {
+      margin: 0 auto;
+    }
   }
 }
 /* === === END SECTION PATROCINIO === === */
