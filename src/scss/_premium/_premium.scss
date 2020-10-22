@@ -1,6 +1,6 @@
 /* === === SECTION PREMIUM === === */
 .premium {
-  display: flex;
+  
   margin-bottom: 50px;
   border-bottom: 2px solid #ededed;
   padding-bottom: 30px;
@@ -57,6 +57,33 @@
 
     li::before {
       content: "→";
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .premium {
+    &__img,
+    &__features {
+      margin: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .premium {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .premium {
+    &__img {
+      padding-left: 30px;
+    }
+
+    &__desc {
+      margin-left: 85px;
     }
   }
 }
