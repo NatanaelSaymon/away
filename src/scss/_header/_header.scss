@@ -62,17 +62,6 @@ header {
   }
 }
 
-@media screen and (min-width: 1024px){
-  // .header {
-
-  //   &__menu {
-  //     &-link {
-  //       font-size: 12px;
-  //     }
-  //   }
-  // }
-}
-
 @media screen and (max-width: 1023px){
   .header {
 
@@ -92,7 +81,8 @@ header {
 
       &-opener {
         display: block;
-        width: 40px;
+        font-size: 40px;
+        color: $color-primary;
         cursor: pointer;
       }
 
