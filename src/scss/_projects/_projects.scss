@@ -5,14 +5,16 @@
   align-items: center;
 
   &__filters {
-    display: inline-block;
     border: 1px solid #ccc;
     background: #eee;
     border-radius: 30px;
-    padding: 0 20px;
+    padding: 0 20px; 
+  }
 
-    li {
-      display: inline-block;
+  &__list {
+    display: flex;
+
+    &-item {
       padding: 10px;
       text-transform: uppercase;
       font-size: 13px;
