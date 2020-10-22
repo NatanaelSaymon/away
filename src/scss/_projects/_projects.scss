@@ -82,4 +82,12 @@
     }
   }
 }
+
+@media screen and (max-width: 559px) {
+  .projects {
+    &__list {
+      display: none;
+    }
+  }
+}
 /* === === END SECTION PROJECTS === === */
