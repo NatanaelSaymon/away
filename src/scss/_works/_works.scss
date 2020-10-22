@@ -35,4 +35,10 @@
     color: #999;
   }
 }
+
+@media screen and (max-width: 1023px) {
+  .work {
+    flex-direction: column;
+  }
+}
 /* === === END SERVICE WORKS === === */
