@@ -66,3 +66,25 @@
     }
   }
 }
+
+@media screen and (max-width: 1023px) {
+  .contato {
+    &-form {
+      width: 90%;
+      margin: 0 auto;
+
+      &__item {
+        flex-direction: column;
+
+        &-name,
+        &-email {
+          flex-direction: column;
+        }
+
+        &-name {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
