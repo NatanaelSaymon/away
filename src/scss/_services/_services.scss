@@ -38,6 +38,7 @@
     flex-direction: column;
 
     &__item {
+      border-left: 0;
       margin-bottom: 30px;
 
       &:last-child {
