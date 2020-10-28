@@ -36,7 +36,6 @@ const slider = tns({
   },
 });
 
-
 /*
 
 Tiny Slider 
@@ -48,3 +47,41 @@ Demo
 https://ganlanyuan.github.io/tiny-slider/demo/
 
 */
+
+let totalSlider = document.querySelectorAll('.banner__slide').length
+const goPrev = document.querySelector('.js-goPrev')
+const goNext = document.querySelector('.js-goNext')
+
+let currentSlide = 0
+
+document.querySelector('.banner').style.width = `calc(100vw * ${totalSlider})`
+
+document.querySelector('.banner__controls').style.height = `${document.querySelector('.banner__sliders').clientHeight}px`
+
+function prevImage() {
+  currentSlide--
+  if(currentSlide < 0){
+    currentSlide = totalSlider - 1
+  }
+  updateMargin()
+}
+
+function nextImage() {
+  currentSlide++
+  if(currentSlide > (totalSlider - 1)) {
+    currentSlide = 0
+  }
+  updateMargin()
+}
+
+function updateMargin() {
+  let sliderItemWidth = document.querySelector('.banner__slide').clientWidth
+  let newMargin = (currentSlide * sliderItemWidth)
+  document.querySelector('.banner__sliders').style.marginLeft = `-${newMargin}px`
+}
+
+goPrev.addEventListener("click", prevImage)
+goNext.addEventListener("click", nextImage)
+
+//Executa a funcao nextImage automaticamente.
+setInterval(nextImage, 3000)

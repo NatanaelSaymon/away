@@ -8,15 +8,32 @@
   background-size: cover;
   overflow: hidden;
 
+  &__controls {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__control {
+    i {
+      color: #fff;
+      font-size: 50px;
+      cursor: pointer;
+    }
+  }
+  
   &__sliders {
-    width: 1000vw;
+    display: flex;
     height: 100%;
+    transition: all ease 1s; 
   }
 
   &__slide {
     width: 100vw;
-    height: 100%;
-    display: inline-block;
+    height: inherit;
     background: rgba(0, 0, 0, 0.8); 
 
     &-area {
@@ -43,6 +60,16 @@
       text-transform: uppercase;
       font-weight: bold;
       margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .banner {
+    &__control {
+      i {
+        display: none;
+      }
     }
   }
 }
